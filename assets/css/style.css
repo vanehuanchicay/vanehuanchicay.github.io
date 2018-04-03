@@ -1,0 +1,224 @@
+/* colors
+#19204F
+#001030
+#16F8FF
+#C1204F
+#A1074B
+#FFE700
+*/
+
+body{
+  margin:0;
+  font-family: Lato;
+  background-color: black;
+}
+.row{
+  margin:0;
+}
+/* efecto harry potter  */
+
+h4{
+  color: white;
+    margin:0;
+}
+.aside_bar a{
+  color: white;
+  text-decoration: none;
+  padding-left: 6%;
+  font-weight: 200;
+  font-size: 110%;
+  text-shadow: 2px 2px 4px #000000;
+}
+.aside_bar{
+  transform: rotate(90deg) translateY(-545px);
+  padding-left: 56%;
+}
+
+.hero {
+  background-image: url(../img/upandown_black.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  height: 160vh;
+}
+
+:root{
+  cursor: default;
+  --cursorX: 80vw;
+  --cursorY: 80vh;
+  
+}
+ :root:before{
+  content: '';
+  display:block;
+  width: 100%;
+  height: 180vh;
+  position: fixed;
+  pointer-events: none;
+  background: radial-gradient(circle 60vmax at var(--cursorX) var(--cursorY),
+  rgba(0,0,0,0) 0%,
+  rgba(0,0,0,0.9) 40%,
+  rgba(0,0,0,0.96) 100%
+  )
+}
+
+#contact{
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  position: fixed;
+  text-align: center;
+  margin-top: 166%;
+}
+#contact img, img.linkedin{
+  position: relative;
+  width: 3%;
+  margin-top: -6%;
+}
+
+#contact img{
+  margin-left: 2%;
+}
+#contact .name{
+  position: relative;
+  margin-top:-0.6%;
+  padding-bottom: 2%;
+  margin-left: 1%;
+}
+.home_button:visited{
+  color: #DD7C73;
+}
+ /* ---------------- MOBILE ---------------- */
+
+@media (max-width: 1023px){
+
+
+  #contact img, img.linkedin{
+  position: relative;
+  width: 10%;
+  margin-top: -15%;
+  margin-left: 4%;
+}
+
+  .aside_bar{
+  transform: rotate(90deg) translateY(-39px);
+  padding-left: 90%;
+  width: 173%;
+}
+  .aside_bar a{
+  font-weight: 200;
+  font-size: 125%;
+  }
+  :root:before{
+  background-size:cover;
+  background-image: url(../img/updown.png);
+  background-repeat: no-repeat;
+  max-height: 100vh;
+  background-position: 50% 10%;
+  }
+}
+@media (min-width: 1024px)and (max-width: 1439px){
+ .hero{
+  height: 149vh;
+ }
+ #contact{
+  text-align: center;
+  margin-top: 3%;
+  }
+}  
+@media (min-width: 1440px){
+ .hero{
+  height: 93vh;
+ }
+
+} 
+/* 1024 hasta 2440 laptop y hasta 1023 devices*/
+
+ /* ---------------- MENU HAMBURGUESA  ---------------- */
+
+.menu-toggle {
+  width: 40px;
+  height: 30px;
+  position: absolute;
+  top: 20px;
+  right: 25px;
+  cursor: pointer;
+}
+.menu-toggle.on .one {
+  -moz-transform: rotate(45deg) translate(7px, 7px);
+  -ms-transform: rotate(45deg) translate(7px, 7px);
+  -webkit-transform: rotate(45deg) translate(7px, 7px);
+  transform: rotate(45deg) translate(7px, 7px);
+}
+.menu-toggle.on .two {
+  opacity: 0;
+}
+.menu-toggle.on .three {
+  -moz-transform: rotate(-45deg) translate(8px, -10px);
+  -ms-transform: rotate(-45deg) translate(8px, -10px);
+  -webkit-transform: rotate(-45deg) translate(8px, -10px);
+  transform: rotate(-45deg) translate(7px, -7px);
+}
+.one,
+.two,
+.three {
+  width: 90%;
+  height: 8%;
+  background: white;
+  margin: 19% auto;
+  backface-visibility: hidden;
+  -moz-transition-duration: 0.3s;
+  -o-transition-duration: 0.3s;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+}
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  margin: 14em auto;
+  text-align: center;
+}
+nav ul.hidden {
+  display: none;
+}
+nav ul a {
+  -moz-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+  text-decoration: none;
+  color: white;
+  font-size: 139%;
+  line-height: 1.5;
+  width: 100%;
+  display: block;
+  letter-spacing: 0.2em;
+  padding-bottom: 5%;
+}
+nav ul a:hover {
+  color: white;
+}
+.menu-section.on {
+  z-index: 10;
+  width: 100%;
+  height: 100%;
+  display: block;
+  background-color: rgba(121, 22, 29, 0.7);
+   position: absolute;
+}
+/* ---------------- MY NAME  ---------------- */
+.my_name{
+  color: rgba(255, 255, 255, 0.596);
+  text-align: left;
+  font-size: 440%;
+  font-family: 'Quattrocento Sans', sans-serif;
+  font-weight: 900;
+  padding-top: 20%;
+  padding-left: 2%;
+}
+.my_name h3{
+  font-family: 'Quattrocento Sans', sans-serif;
+  font-weight: 700;
+  padding-left: 1%;
+  margin-top: -2%;
+}
