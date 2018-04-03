@@ -469,6 +469,7 @@ button.md-close {
     padding-top: 47%;
   }
   .insomnia_container{
+    margin-left: 4%;
     width: 100%;
     background-repeat: no-repeat;
     height: 105vh;
