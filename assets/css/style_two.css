@@ -464,14 +464,14 @@ button.md-close {
     background-repeat: no-repeat;
     height: 105vh;
     margin-left: 2%;
-    background-size: cover;
+    background-size: contain;
     overflow: scroll;
   }
   .trivia_container{
     width: 100%;
     background-repeat: no-repeat;
     height: 101vh;
-    background-size: cover;
+    background-size: contain;
     overflow: scroll;
     padding-bottom: 30%;
   }
@@ -480,7 +480,7 @@ button.md-close {
     background-repeat: no-repeat;
     height: 138vh;
     margin-left: -7%;
-    background-size: cover;
+    background-size: contain;
   }
   .spa_container{
     width: 100%;
