@@ -454,6 +454,8 @@ button.md-close {
   }
   .insomnia_container{
     background-size: contain;
+    margin-left: 4%;
+
   }
   .trivia_container{
    
@@ -469,7 +471,6 @@ button.md-close {
     padding-top: 47%;
   }
   .insomnia_container{
-    margin-left: 4%;
     width: 100%;
     background-repeat: no-repeat;
     height: 105vh;
@@ -484,6 +485,8 @@ button.md-close {
     background-size: contain;
     overflow: scroll;
     padding-bottom: 30%;
+    margin-left: 3%;
+
   }
   .lab_container{
     width: 118%;
