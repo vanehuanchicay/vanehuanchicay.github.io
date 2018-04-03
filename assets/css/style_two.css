@@ -449,8 +449,17 @@ button.md-close {
   }
   .lab_container{
     padding-bottom: 8%;
+    background-size: contain;
+
   }
-  
+  .insomnia_container{
+    background-size: contain;
+  }
+  .trivia_container{
+   
+    background-size: contain;
+  }
+ 
 }
 @media (max-width: 1023px){ 
  .numbers{
